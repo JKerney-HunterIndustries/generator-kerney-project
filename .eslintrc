@@ -11,8 +11,13 @@
         "ecmaFeatures": {}
     },
     "rules": {
-        "no-undef": 1,
-        "no-console": 1
+        "no-undef": "error",
+        "no-unused-vars": "warn",
+        "no-console": "warn",
+        "no-extra-boolean-cast": "off",
+        "semi": "error",
+        "no-inner-declarations": "warn",
+        "no-octal-escape": "warn"
     },
     "globals": {
         "describe": false,
@@ -20,6 +25,7 @@
         "before": false,
         "after": false,
         "beforeEach": false,
-        "afterEach": false
+        "afterEach": false,
+        "signet": false
     }
 }

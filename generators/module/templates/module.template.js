@@ -1,7 +1,7 @@
 'use strict';
-function <%= fileVarName %> () {
+function <%= moduleName %> () {
     // source code here
     throw new Error('Not Yet Implimented');
 }
 
-module.exports = <%= fileVarName %>;
+module.exports = <%= moduleName %>;

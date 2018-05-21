@@ -9,11 +9,11 @@ describe('<%= fileName %>', function () {
     const { asInformationString } = testEnvironment.build('objectInformation');
     const { assert } = testEnvironment.build('chai');
 
-    let <%= fileVarName %>;
+    let <%= moduleName %>;
 
     beforeEach(function () {
         const testContext = applicationEnvironment.new();
-        <%= fileVarName %> = testContext.build('<%= fileVarName %>');
+        <%= moduleName %> = testContext.build('<%= moduleName %>');
     });
 
     it('should have a failing test -- delete this test!', function () {

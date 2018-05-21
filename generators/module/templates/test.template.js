@@ -1,6 +1,6 @@
 'use strict';
 
-describe('<%= fileName %>', function () {
+describe('<%= moduleName %>', function () {
     const applicationEnvironment = require('../app/applicationEnvironment');
     const testEnvironment = require('./testEnvironment');
 

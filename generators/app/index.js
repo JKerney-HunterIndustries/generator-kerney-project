@@ -51,11 +51,12 @@ module.exports = class extends Generator {
 
         let binPathTokens = ['app'];
         let testPathTokens = ['test'];
+        let testAppPathTokens = ['test', 'app'];
         let testUtilsPathTokens = testPathTokens.concat(['test-utils']);
 
         const copyDefinitions = [
             {
-                templatePath: joinPath(testPathTokens, 'test.template.js'),
+                templatePath: joinPath(testAppPathTokens, 'test.template.js'),
                 filePath: joinPath(testPathTokens, projectName + '.test.js'),
                 isTemplate: true
             },

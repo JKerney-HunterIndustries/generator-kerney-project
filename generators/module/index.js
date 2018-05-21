@@ -12,12 +12,7 @@ module.exports = class extends Generator {
         const prompts = [
             {
                 type: 'input',
-                name: 'fileName',
-                message: 'File name:'
-            },
-            {
-                type: 'input',
-                name: 'fileVarName',
+                name: 'moduleName',
                 message: 'Module variable name:'
             }
         ];
@@ -28,12 +23,10 @@ module.exports = class extends Generator {
     }
 
     writing() {
-        const fileName = this.props.fileName;
-        const fileVarName = this.props.fileVarName;
+        const moduleName = this.props.moduleName;
 
         const templateValues = {
-            fileName: fileName,
-            fileVarName: fileVarName
+            moduleName: moduleName
         };
 
         let testPathTokens = ['test'];
@@ -42,12 +35,12 @@ module.exports = class extends Generator {
         const copyDefinitions = [
             {
                 templatePath: 'module.template.js',
-                filePath: joinPath(binPathTokens, fileName + '.js'),
+                filePath: joinPath(binPathTokens, moduleName + '.js'),
                 isTemplate: true
             },
             {
                 templatePath: 'test.template.js',
-                filePath: joinPath(testPathTokens, fileName + '.test.js'),
+                filePath: joinPath(testPathTokens, moduleName + '.test.js'),
                 isTemplate: true
             }
         ];

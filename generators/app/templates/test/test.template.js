@@ -1,8 +1,8 @@
 'use strict';
 
 describe('<%= projectName %>', function () {
-    const applicationEnvironment = require('../applicationEnvironment');
-    const testEnvironment = require('./testEnvironment');
+    const applicationEnvironment = require('../../applicationEnvironment');
+    const testEnvironment = require('../testEnvironment');
 
     testEnvironment.build('approvalResultFactory')();
 

@@ -1,4 +1,4 @@
-# generator-projects [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-projects 
 > Project bootstrapper for quick startup
 
 ## Installation
